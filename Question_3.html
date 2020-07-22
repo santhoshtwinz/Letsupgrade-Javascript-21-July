@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .togglecolor {
+  background-color: rgb(0, 0, 0);
+  color: white;
+        }
+  .colorx {
+  background-color: white;
+  color:black;
+  }
+
+    </style>
+</head>
+<body>
+    <button onclick="changeColor()">Click here to chnage mode</button>
+
+
+    <p id = "Mani" style= "font-size:50px">   </p>
+    <p id = "Welcome" style="font-size:40px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;background-color: darkorange;"> </p>
+    <p id="backpage" class="togglecolor"> </p>
+
+    <script>
+        let name = window.prompt("Enter Your Name");
+        
+        let a = "Hi "+name+". Welcome to my Page"
+        document.getElementById("Welcome").innerText=a;
+
+
+        function neram(){
+        let today = new Date();
+        let neram = today.toLocaleTimeString();
+        document.getElementById('Mani').innerText=neram;
+        
+        }
+        setInterval(neram,1000);
+        
+
+
+        function changeColor() {debugger;
+  document.body.classList.toggle("togglecolor");
+        }
+        // let clr = document.getElementById("colour");
+        // console.log(clr.getAttribute("id"));
+     //   changeColor.classList.toggle();
+        
+    </script>
+</body>
+</html>

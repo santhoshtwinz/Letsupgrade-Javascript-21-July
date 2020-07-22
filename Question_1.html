@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id= backpage>
+
+    <script>
+        let arr =['violet','wheat','blue','green','yellow','orange','red'];
+        let i=0;
+        setInterval(() =>{
+            document.getElementById('backpage').setAttribute('style','background-color:'+arr[i]);  
+            // document.getElementById('neranm').setAttribute('style','background-color:'+arr[i+1]);
+            i++;
+            if(arr.length==i)
+            {i=0;}
+        },5000)
+    </script>
+</body>
+</html>
